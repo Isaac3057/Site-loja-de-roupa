@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 15px 30px;
+  }
+  
+  .navbar .logo {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .banner {
+    background: url('img/banner.jpg') no-repeat center/cover;
+    height: 300px;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .produtos-grid {
+    padding: 40px 20px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  
+  .produto-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .produto-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .produto-card img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  .sobre-section, .contato-section {
+    background: white;
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 8px;
+  }
+  
+  form label {
+    display: block;
+    margin: 15px 0 5px;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form button {
+    margin-top: 15px;
+    padding: 10px 25px;
+    background: #222;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+  
+  form button:hover {
+    background: #555;
+  }
+  
+  footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .nav-menu {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
