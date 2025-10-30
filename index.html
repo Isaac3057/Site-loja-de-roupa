@@ -1,93 +1,77 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>drip_loja</title>
-        <link rel="icon" href="img/images.png" type="image/x-icon">
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Drip</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cabeçalho com menu -->
+    <header>
+        <nav class="navbar">
+            <!-- Logo -->
+            <h1 class="logo">Loja Drip</h1>
 
-        <!-- Cabeçalho com menu -->
-        <header>
-            <nav class="navbar">
-                <h1 class="logo">Loja Drip</h1>
-                <ul class="nav-menu">
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#produtos">Produtos</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <!-- Banner principal -->
-        <section id="home" class="banner">
-            <h2>Bem-vindo à nossa nova coleção!</h2>
-            <p>Estilo, conforto e qualidade para você.</p>
-        </section>
-
-        <!-- Seção produtos (usar grid) -->
-        <section id="produtos" class="produtos-grid">
-            <h2>Produtos em destaque</h2>
-            <div class="grid-container">
-                <!-- Cards de produtos -->
-                <article class="produto-card">
-                    <img src="img/camisa.jpg" alt="Camisa estilosa" />
-                    <h3>Camisa Estilosa</h3>
-                    <p>R$ 79,90</p>
-                </article>
-                <!-- Repita para outros produtos -->
+            <!-- Localização e pesquisa -->
+            <div class="location-search">
+                <div class="location">
+                    <span>Enviar para:</span> 
+                    <span id="location">16200-001, Birigüi</span>
+                </div>
+                <div class="search-container">
+                    <input type="text" placeholder="O que você procura hoje?" id="search-bar">
+                    <button id="search-btn">🔍</button>
+                </div>
             </div>
-        </section>
 
-        <!-- Sobre a loja -->
-        <section id="sobre" class="sobre-section">
-            <h2>Loja do drip, como funciona:</h2>
-            <p>Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years old. Richard McClintock, a
-                Latin professor at Hampden-Sydney College in Virginia, looked up
-                one of the more obscure Latin words, consectetur, from a Lorem
-                Ipsum passage, and going through the cites of the word in
-                classical literature, discovered the undoubtable source. Lorem
-                Ipsum comes from sections 1.10.32 and 1.10.33 of
-                "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil)
-                by Cicero, written in 45 BC. This book is a treatise on the
-                theory of ethics, very popular during the Renaissance. The first
-                line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from
-                a line in section 1.10.32.
+            <!-- Menu de categorias -->
+            <ul class="nav-menu">
+                <li><a href="#feminino">Feminino</a></li>
+                <li><a href="#masculino">Masculino</a></li>
+                <li><a href="#infantil">Infantil</a></li>
+                <li><a href="#marcas">Marcas</a></li>
+                <li><a href="#telefonia">Telefonia</a></li>
+            </ul>
 
-                The standard chunk of Lorem Ipsum used since the 1500s is
-                reproduced below for those interested. Sections 1.10.32 and
-                1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also
-                reproduced in their exact original form, accompanied by English
-                versions from the 1914 translation by H. Rackham.</p>
-        </section>
+            <!-- Ícones de funcionalidades -->
+            <div class="icons">
+                <a href="#wishlist" class="wishlist-icon">❤️ Lista de Desejos</a>
+                <a href="#login" class="login-icon">Entrar</a>
+                <a href="#cart" class="cart-icon">🛒 (0)</a>
+            </div>
+        </nav>
+    </header>
 
-        <!-- Contato -->
-        <section id="contato" class="contato-section">
-            <h2>Fale conosco</h2>
-            <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required />
+    <!-- Barra de Promoção -->
+    <section class="promo-banner">
+        <p>Frete grátis para compras acima de R$199,90</p>
+        <p>Ganhe 10% OFF na primeira compra com o cupom: <strong>PRIMEIRA10</strong></p>
+    </section>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required />
-
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="4"
-                    required></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-
-        <!-- Rodapé -->
-        <footer>
-            <p>© 2025 Minha Loja de drip. Todos os direitos reservados.</p>
-        </footer>
-
-    </body>
+    <!-- Banner Principal -->
+    <section id="home" class="banner">
+        <h2>Bem-vindo à nossa nova coleção!</h2>
+        <p>Estilo, conforto e qualidade para você.</p>
+    </section>
+    <section class="banner">
+      <div class="banner-images">
+          <div class="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6Pr_amUElw330mQV5HK35Fr4-X-9ENL9h6qUxGIyJdgHG-BqCun459rysXKqPUD6hf7EPSyUmgM3ckaU5UlqrvgBo4C0kIKUzfULkJzRv" style="background-image: url('image1.jpg');"></div>
+          <div class="image" style="background-image: url('image2.jpg');"></div>
+          <div class="image" style="background-image: url('image3.jpg');"></div>
+      </div>
+      </section>    
+      
+      <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Loja Drip - Todos os direitos reservados</p>
+            <ul class="social-links">
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
 </html>

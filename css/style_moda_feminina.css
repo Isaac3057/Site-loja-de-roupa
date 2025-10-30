@@ -1,0 +1,30 @@
+/* Adicionando grid para a seção de produtos */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas de tamanho igual */
+  gap: 20px; /* Espaçamento entre os itens */
+  padding: 20px;
+}
+
+.produto-card {
+  border: 1px solid #ddd; /* Opcional: adicionar borda nos produtos */
+  border-radius: 10px; /* Deixa as bordas arredondadas */
+  padding: 15px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.produto-card img {
+  max-width: 100%; /* A imagem vai ocupar toda a largura do card */
+  height: auto; /* Manter a proporção da imagem */
+  border-radius: 5px; /* Opcional: arredondar as bordas das imagens */
+}
+
+.produto-card h3 {
+  margin: 10px 0; /* Espaçamento entre o título e o preço */
+}
+
+.produto-card p {
+  font-size: 1.2em;
+  color: #333;
+}
