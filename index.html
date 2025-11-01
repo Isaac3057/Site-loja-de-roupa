@@ -1,47 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja Drip</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/download.jpeg" type="image/x-icon">
 </head>
+
 <body>
-    <!-- Cabeçalho com menu -->
+    <!-- Cabeçalho -->
     <header>
-        <nav class="navbar">
-            <!-- Logo -->
-            <h1 class="logo">Loja Drip</h1>
-
-            <!-- Localização e pesquisa -->
-            <div class="location-search">
-                <div class="location">
-                    <span>Enviar para:</span> 
-                    <span id="location">16200-001, Birigüi</span>
-                </div>
-                <div class="search-container">
-                    <input type="text" placeholder="O que você procura hoje?" id="search-bar">
-                    <button id="search-btn">🔍</button>
-                </div>
+        <!-- Primeira barra: logo, busca e ícones -->
+        <div class="top-header">
+            <div class="logo-container">
+                <img src="img/logo_sans_gif.gif" alt="Logo Loja Drip">
+                <h1 class="logo">Loja Drip</h1>
             </div>
-
-            <!-- Menu de categorias -->
-            <ul class="nav-menu">
-                <li><a href="#feminino">Feminino</a></li>
-                <li><a href="#masculino">Masculino</a></li>
-                <li><a href="#infantil">Infantil</a></li>
-                <li><a href="#marcas">Marcas</a></li>
-                <li><a href="#telefonia">Telefonia</a></li>
-            </ul>
-
-            <!-- Ícones de funcionalidades -->
-            <div class="icons">
-                <a href="#wishlist" class="wishlist-icon">❤️ Lista de Desejos</a>
-                <a href="#login" class="login-icon">Entrar</a>
-                <a href="#cart" class="cart-icon">🛒 (0)</a>
+            <div class="search-box">
+                <input type="text" placeholder="O que você procura hoje?">
+                <button>🔍</button>
             </div>
-        </nav>
+            <div class="header-icons">
+                <a href="#wishlist">❤️ Lista de Desejos</a>
+                <a href="#login">👤 Entrar</a>
+                <a href="#cart">🛒 (0)</a>
+            </div>
+        </div>
+
+        <!-- Segunda barra: local e menu -->
+        <div class="bottom-header">
+            <div class="location">
+                <span>📍 Enviar para:</span>
+                <strong>16200-001, Birigui</strong>
+            </div>
+            <nav class="menu">
+                <a href="index.html">Início</a>
+                <a href="../Site-loja-de-roupa/pages/Moda_feminina.html">Feminino</a>
+                <a href="../Site-loja-de-roupa/pages/Moda_masculina.html">Masculino</a>
+                <a href="../Site-loja-de-roupa/pages/Moda_infantil.html">Infantil</a>
+                <a href="../Site-loja-de-roupa/pages/Marcas.html">Marcas</a>
+                <a href="../Site-loja-de-roupa/pages/Políticas.html">Políticas</a>
+            </nav>
+        </div>
     </header>
+
+    <!-- Banner Principal -->
+    <section id="home" class="banner">
+        <h2>Bem-vindo à nossa nova coleção!</h2>
+        <p>Estilo, conforto e qualidade para você.</p>
+    </section>
 
     <!-- Barra de Promoção -->
     <section class="promo-banner">
@@ -49,20 +58,59 @@
         <p>Ganhe 10% OFF na primeira compra com o cupom: <strong>PRIMEIRA10</strong></p>
     </section>
 
-    <!-- Banner Principal -->
-    <section id="home" class="banner">
-        <h2>Bem-vindo à nossa nova coleção!</h2>
-        <p>Estilo, conforto e qualidade para você.</p>
+    <section id="loop" class="loop">
+        <div class="slideshow">
+            <!-- Slide 1 -->
+            <div class="slide fade">
+                <img src="https://picsum.photos/1600/600?random=1" alt="Coleção Feminina">
+                <div class="caption">
+                    <h2>Nova Coleção Feminina</h2>
+                    <p>Estilo e conforto para o seu dia a dia</p>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide fade">
+                <img src="https://picsum.photos/1600/600?random=2" alt="Coleção Masculina">
+                <div class="caption">
+                    <h2>Moda Masculina</h2>
+                    <p>Conecte-se ao seu estilo</p>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide fade">
+                <img src="https://picsum.photos/1600/600?random=3" alt="Coleção Infantil">
+                <div class="caption">
+                    <h2>Moda Infantil</h2>
+                    <p>Para os pequenos com muito charme</p>
+                </div>
+            </div>
+
+            <!-- Slide 4 (Marcas) -->
+            <div class="slide fade">
+                <img src="https://picsum.photos/1600/600?random=4" alt="Marcas">
+                <div class="caption">
+                    <h2>Nossas Marcas Parceiras</h2>
+                    <p>Conheça grifes e estilos que fazem parte da Loja Drip</p>
+                </div>
+            </div>
+
+            <!-- Botões de navegação -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+        </div>
+
+        <!-- Bolinhas indicadoras -->
+        <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
     </section>
-    <section class="banner">
-      <div class="banner-images">
-          <div class="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6Pr_amUElw330mQV5HK35Fr4-X-9ENL9h6qUxGIyJdgHG-BqCun459rysXKqPUD6hf7EPSyUmgM3ckaU5UlqrvgBo4C0kIKUzfULkJzRv" style="background-image: url('image1.jpg');"></div>
-          <div class="image" style="background-image: url('image2.jpg');"></div>
-          <div class="image" style="background-image: url('image3.jpg');"></div>
-      </div>
-      </section>    
-      
-      <!-- Footer -->
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
             <p>&copy; 2025 Loja Drip - Todos os direitos reservados</p>
@@ -73,5 +121,7 @@
             </ul>
         </div>
     </footer>
+    <script src="JS/index.js"></script>
 </body>
+
 </html>
