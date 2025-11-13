@@ -215,106 +215,38 @@ header {
 .caption p {
   font-size: 18px;
 }
-
-/* ===== LOOP DE IMAGENS ===== */
-.loop {
-  position: relative;
-  width: 100%;
-  height: 600px; /* altura maior */
+#banner_anima {
+  width: 99vw;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.slideshow {
-  width: 100%;
-  height: 100%;
-  position: relative;
+#banner_animado {
+  display: flex;
+  width: calc(200%); /* dobra o tamanho pra permitir o looping suave */
+  animation: animacao 30s linear infinite;
 }
 
-.slide {
-  display: none;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.slide img {
-  width: 100%;
-  height: 100%;
+#banner_animado img {
+  width: 25vw;
+  height: 73vh;
   object-fit: cover;
+  border-radius: 20px;
+  margin-right: 10px;
 }
 
-/* Botões de navegação */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  color: white;
-  font-weight: bold;
-  font-size: 40px;
-  padding: 12px;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 50%;
-  user-select: none;
-  transition: background-color 0.3s;
-}
 
-.prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+/* Animação que faz o loop perfeito */
+@keyframes animacao {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
-
-.prev {
-  left: 20px;
-}
-
-.next {
-  right: 20px;
-}
-
-/* Bolinhas indicadoras */
-.dots {
-  text-align: center;
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-}
-
-.dot {
-  height: 12px;
-  width: 12px;
-  margin: 0 5px;
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.3s;
-}
-
-.active, .dot:hover {
-  background-color: white;
-}
-
-/* Legenda */
-.caption {
-  position: absolute;
-  bottom: 60px;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  color: white;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 15px 25px;
-  border-radius: 8px;
-}
-
-.caption h2 {
-  font-size: 36px;
-  margin-bottom: 8px;
-}
-
-.caption p {
-  font-size: 18px;
-}
-
 
 /* ===== Rodapé ===== */
 .footer {
@@ -348,4 +280,78 @@ header {
 .footer .social-links a:hover {
   text-decoration: underline;
 }
+/* ===== MEDIA QUERY PARA TELAS MÉDIAS (TABLET ~ 768px a 1024px) ===== */
+@media (max-width: 1024px) {
+  .top-header {
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 
+  .search-box {
+    width: 60%;
+  }
+
+  .menu a {
+    font-size: 13px;
+    padding: 5px;
+  }
+
+  .loop {
+    height: 450px;
+  }
+
+  .caption h2 {
+    font-size: 28px;
+  }
+}
+
+/* ===== MEDIA QUERY PARA TELAS PEQUENAS (CELULAR ~ 480px a 767px) ===== */
+@media (max-width: 767px) {
+  .top-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .search-box {
+    width: 90%;
+  }
+
+  .header-icons {
+    margin-top: 10px;
+  }
+
+  .bottom-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .menu a {
+    font-size: 14px;
+    padding: 6px 8px;
+  }
+
+  .loop {
+    height: 300px;
+  }
+
+  .caption h2 {
+    font-size: 22px;
+  }
+
+  .caption p {
+    font-size: 14px;
+  }
+
+  .prev,
+  .next {
+    font-size: 24px;
+    padding: 8px;
+  }
+}

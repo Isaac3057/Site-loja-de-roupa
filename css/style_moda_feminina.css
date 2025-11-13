@@ -229,3 +229,32 @@ header {
 .footer .social-links a:hover {
     text-decoration: underline;
 }
+/* Telas médias (tablet) */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 produtos por linha */
+  }
+}
+
+/* Telas pequenas (celular) */
+@media (max-width: 599px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* 1 produto por linha */
+  }
+
+  .top-header,
+  .bottom-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .search-box {
+    width: 90%;
+    margin-top: 10px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

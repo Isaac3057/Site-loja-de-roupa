@@ -229,3 +229,80 @@ header {
 .footer .social-links a:hover {
     text-decoration: underline;
 }
+/* ===== TELAS MÉDIAS (TABLET 768px a 1024px) ===== */
+@media (max-width: 1024px) {
+
+  .top-header {
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .search-box {
+    width: 60%;
+  }
+
+  .menu a {
+    font-size: 13px;
+    padding: 5px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+  }
+}
+
+
+/* ===== TELAS PEQUENAS (CELULAR até 767px) ===== */
+@media (max-width: 767px) {
+
+  .top-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .search-box {
+    width: 90%;
+  }
+
+  .header-icons {
+    margin-top: 10px;
+  }
+
+  .bottom-header {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .menu a {
+    font-size: 14px;
+    padding: 6px 8px;
+  }
+
+  .banner h2 {
+    font-size: 28px;
+  }
+
+  .banner p {
+    font-size: 16px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr; /* 1 coluna */
+  }
+
+  .produto-card {
+    padding: 12px;
+  }
+
+  .produto-card p {
+    font-size: 1em;
+  }
+}
